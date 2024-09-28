@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #17c51f;
   }
 }
 
@@ -18,10 +18,20 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh; /* Make body full height */
+  margin: 0; /* Remove default margin */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .option-pane {
+    @apply flex-none w-1/4 p-4 bg-black text-white; /* Set background to black and text to white */
+  }
+
+  .display-pane {
+    @apply flex-grow p-4 bg-gray-200; /* DisplayPane styles */
   }
 }
