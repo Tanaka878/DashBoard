@@ -4,7 +4,7 @@ import { useState } from 'react';
 import OptionPane from "./components/OptionPane";
 import DisplayPane from "./components/DisplayPane";
 import AllPost from "./components/AllPosts"; 
-import AllUser from "./components/AllUser"; 
+import AllUser from "./components/Graph"; 
 import Projects from "./components/Projects"; 
 
 export default function Home() {
