@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+coming soon
 
       
     </div>
