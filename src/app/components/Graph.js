@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 
-// Register all necessary components
+
 Chart.register(...registerables);
 
 const Graph = () => {
@@ -14,7 +14,7 @@ const Graph = () => {
     useEffect(() => {
         async function fetchGraphData() {
             try {
-                const response = await fetch('/api/users'); // Adjust this to your graph data endpoint
+                const response = await fetch('/api/users'); 
                 const data = await response.json();
                 setGraphData(data);
             } catch (error) {
@@ -40,7 +40,7 @@ const Graph = () => {
         ],
     };
 
-    // Handle loading and error states
+    
     if (error) {
         return <div>{error}</div>;
     }
