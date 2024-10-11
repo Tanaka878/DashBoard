@@ -10,8 +10,11 @@ export async function GET(req) {
 
         const collection = db.collection('myCollection'); 
         const users = await collection.find({}).toArray(); 
+        console.log(users)
+        console.log("endpoint invoked");
 
         return new Response(JSON.stringify(users), {
+        
             status: 200,
             headers: { 'Content-Type': 'application/json' },
         });
