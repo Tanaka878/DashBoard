@@ -13,7 +13,8 @@ export async function GET(req) {
         const collection = db.collection('myCollection'); // Ensure the collection name is correct
         
         // Fetch all documents in the collection
-        const users = await collection.find({}).toArray();
+        const users = await collection.find({}).limit(10).toArray(); // Limit the number of documents fetched
+
         
         // Log the retrieved data for debugging
         console.log("Data fetched from MongoDB:", users);
